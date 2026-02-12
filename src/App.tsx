@@ -1,4 +1,5 @@
-import { Suspense, useContext, useState } from "react";
+// src/App.tsx
+import { useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../src/components/Navbar";
 import Home from "../src/pages/Home";
@@ -11,9 +12,9 @@ const App: React.FC = () => {
   const { mainurl } = useContext(ApiContext);
 
   return (
-    <section className="bg-white dark:bg-darkbg min-h-[100vh-10px] ">
+    <section className="min-h-screen bg-gradient-to-b from-darkbg via-[#0a1f1a] to-[#0d2b26] text-offwhite">
       <Navbar />
-      <div className="lg:px-28 max-sm:px-7 md:px-14">
+      <div className="lg:px-28 md:px-14 max-sm:px-4 py-10">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/report" element={<Report />} />

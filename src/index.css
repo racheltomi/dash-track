@@ -8,6 +8,108 @@
   line-height: 1.4;
   font-weight: 400;
 }
+
+body {
+  /* Site-wide base background: dark teal green shade */
+  margin: 0;
+  background: #0a1f1a;
+}
 .logo {
   font-family: "Limelight", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* simple fade-up on load */
+/* .fade-up {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+.fade-up-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.fade-up-delay-2 {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* subtle floating for illustrations/cards */
+/* .float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}  */
+
+@layer components {
+  .metric-chip {
+    @apply absolute inline-flex items-center gap-2 rounded-full border border-primaryColor/70 bg-[#020712ee] px-3 py-1.5 text-[11px] text-offwhite shadow-[0_12px_30px_rgba(16,241,182,0.45)];
+    animation: hero-chip-slide 11s linear infinite;
+  }
+
+  .metric-chip::before {
+    content: "";
+    @apply h-2 w-2 rounded-full bg-primaryColor;
+    box-shadow: 0 0 0 4px rgba(16, 241, 182, 0.18);
+  }
+
+  .metric-chip-1 {
+    top: 22%;
+    left: -35%;
+    animation-delay: 0s;
+  }
+
+  .metric-chip-2 {
+    top: 45%;
+    left: -45%;
+    animation-delay: 2.3s;
+  }
+
+  .metric-chip-3 {
+    top: 32%;
+    left: -40%;
+    animation-delay: 4.7s;
+  }
+
+  .metric-chip-4 {
+    top: 68%;
+    left: -50%;
+    animation-delay: 7s;
+  }
+}
+
+@keyframes hero-chip-slide {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(140%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(180%);
+    opacity: 0;
+  }
 }

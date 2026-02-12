@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
                 </p>
               </Link>
             </li>
-            <ul className="flex justify-center items-center divide-x-2 divide-textHeaderDark dark:divide-smallcardColor divide-opacity-20 dark:divide-opacity-20">
+            {/* <ul className="flex justify-center items-center divide-x-2 divide-textHeaderDark dark:divide-smallcardColor divide-opacity-20 dark:divide-opacity-20">
               <li className="dark:text-textDark text-xs">Switch Mode</li>
               <li
                 className="px-2 cursor-pointer flex justify-center items-center"
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
                   <BsSun fontSize="large" color="#ffffff" />
                 )}
               </li>
-            </ul>
+            </ul> */}
           </ul>
         </nav>
       </section>

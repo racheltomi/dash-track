@@ -137,7 +137,7 @@ const ResultPage: React.FC = () => {
           <TbArrowBackUp size="1.5rem" />
           <div className="text-sm text-textDark px-1">Go Back</div>
         </div>
-        <div className="border border-secondary dark:border-opacity-50 border-opacity-20 rounded-lg py-4 text-black dark:text-greylight text-sm">
+        <div className="border border-lightGreen dark:border-opacity-10 border-opacity-20 rounded-lg py-4 text-black dark:text-greylight text-sm">
           <div className="flex justify-between max-sm:flex-col max-sm:items-start items-center pb-6">
             <div className="flex flex-col">
               <div className="flex py-2">
@@ -180,14 +180,14 @@ const ResultPage: React.FC = () => {
         </div>
       </div>
       {/**==============PERFORMANCE SECTION============== */}
-      <div className="border border-secondary  dark:border-opacity-50 border-opacity-20 ">
+      <div className="border border-lightGreen dark:border-opacity-10 border-opacity-20 ">
         <div className="py-10">
           <h2 className="text-xl text-urlColor dark:text-offwhite pb-2 pl-8 font-bold">
             Performance Report
           </h2>
         </div>
 
-        <div className="flex px-14 lg:px-36 max-sm:px-4  justify-between items-center max-sm:flex-col divide-x-2 max-sm:divide-x-0 text-lineColor divide-opacity-25 py-10 max-sm:py-3">
+        <div className="flex px-14 lg:px-6 max-sm:px-4  justify-between items-center max-sm:flex-col divide-x-2 max-sm:divide-x-0 text-lineColor divide-opacity-25 py-10 max-sm:py-3">
           <div className="w-3/12 lg:w-3/12 max-sm:w-6/12 md:w-4/12">
             <div className="flex items-center justify-center flex-col">
               <div className="font-bold">
@@ -223,7 +223,7 @@ const ResultPage: React.FC = () => {
                     90-100
                   </div>
                 </div>
-                <div className="flex items-center px-7 ">
+                <div className="flex items-center px-3 ">
                   <div className="w-4 h-4 bg-hoverColor"></div>
                   <div className="text-sm text-textPlaceholder px-3">50-89</div>
                 </div>
@@ -438,8 +438,8 @@ const ResultPage: React.FC = () => {
         </div>
       </section>
       {/**=================Image filmstrip section============== */}
-      <section className="my-10 border border-lineColor border-opacity-25 dark:border-secondary">
-        <div className="bg-smallcardColor  dark:bg-darkSmallCardColor dark:bg-opacity-25 py-5 px-2 mb-5">
+      <section className="my-10 borde dark:bg-lightGreen dark:bg-opacity-5">
+        <div className="bg-smallcardColor  dark:bg-lightGreen dark:bg-opacity-5 py-5 px-5 mb-5">
           <h3 className="font-bold dark:text-offwhite text-xl ">
             Visual Loading Screen
           </h3>

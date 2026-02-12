@@ -33,7 +33,7 @@ module.exports = {
       hoverColor: "#857B23",
       invalid: "#F64747",
       // darkbg: "#05100B",
-      darkbg: "#040404",
+      darkbg: "#0a1f1a",
       textDark: "#ABABAB",
       darkInputBg: "#0b0d13ca",
       // darkInputBg: "#0C1511",

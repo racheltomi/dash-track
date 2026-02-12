@@ -17,7 +17,7 @@ const Input: React.FC = () => {
   return (
     <div className="">
       <input
-        className="py-2 w-full max-sm:w-72 bg-smallcardColor dark:bg-darkInputBg focus:outline-none  border-2 border-primaryDark dark:border-secondary  text-urlColor dark:text-greylight placeholder:text-textPlaceholder placeholder:text-xs placeholder: pl-2"
+        className="w-full rounded-[999px] bg-white px-6 py-3 text-sm text-urlColor placeholder:text-textPlaceholder shadow-lg outline-none focus:ring-2 focus:ring-primaryColor focus:ring-offset-0 border-none"
         placeholder="Enter a web page URL"
         onChange={handleInput}
         name="url"
